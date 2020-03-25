@@ -15,5 +15,17 @@ namespace SmartSchool.Core.Entities
         public DateTime Time { get; set; }
         public double Value { get; set; }
 
+        public Measurement()
+        {
+
+        }
+
+        public Measurement(Sensor sensor, DateTime time, double value)
+        {
+            Sensor = sensor;
+            Time = time;
+            Value = value;
+        }
+
     }
 }

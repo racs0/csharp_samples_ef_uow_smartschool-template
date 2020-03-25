@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SmartSchool.Core.Entities
 {
@@ -15,5 +16,15 @@ namespace SmartSchool.Core.Entities
         public string Unit { get; set; }
         public ICollection<Measurement> Measurements { get; set; }
 
+        public Sensor()
+        {
+
+        }
+
+        public Sensor(string name, string location)
+        {
+            Name = name;
+            Location = location;
+        }
     }
 }

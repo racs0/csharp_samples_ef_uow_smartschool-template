@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using SmartSchool.Core.Entities;
 using SmartSchool.Persistence;
@@ -40,7 +41,8 @@ namespace SmartSchool.TestConsole
 				Console.WriteLine("--------------------------------------------");
 				Console.WriteLine();
 
-				var count = 0;   // TODO
+				Sensor sensor = new Sensor("temperature","livingroom");
+				var count = 0;  // TODO
 				Console.WriteLine($"Anzahl Messwerte für Sensor temperature in location livingroom: {count}");
 				Console.WriteLine();
 
